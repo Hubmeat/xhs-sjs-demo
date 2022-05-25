@@ -1,0 +1,18 @@
+<sjs src="./index.sjs" module="sjsApi" />
+
+<view>{{ name }}</view><br />
+
+<view class="section">
+  <view class="item">parseInt('123', 5) 应输出: {{ sjsApi.testParseInt }}</view>
+  <view class="item">parseFloat(r) * 2.0 * Math.PI 应输出: {{ sjsApi.testParseFloat }}</view>
+  <view class="item">isNaN('str') 应输出: {{ sjsApi.testIsNaN('str100') }}</view>
+  <view class="item">isNaN(10) 应输出: {{ sjsApi.testIsNaN(10) }}</view>
+  <view class="item">testIsFinite(0) 应输出: {{ sjsApi.testIsFinite(0) }}</view>
+  <view class="item">testIsFinite(1) 应输出: {{ sjsApi.testIsFinite(1) }}</view>
+  <view class="item">encodeURI 应输出: {{ sjsApi.testEncodeURI() }}</view>
+  <view class="item">decodeURI 应输出: {{ sjsApi.testDecodeURI }}</view>
+  <view class="item">encodeURIComponent 应输出: {{ sjsApi.testEncodeURIComponent() }}</view>
+  <view class="item">decodeURIComponent 应输出: {{ sjsApi.testDecodeURIComponent() }}</view>
+  <view class="item">getDate 应输出: {{ sjsApi.testGetDate }}</view>
+  <view class="item">getRegExp 应输出: {{ sjsApi.testGetRegExp }}</view>
+</view>

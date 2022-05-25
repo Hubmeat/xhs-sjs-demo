@@ -1,0 +1,5 @@
+<sjs src="./index.sjs" module="execptionTest" />
+
+<view>控制台输出 【 a is not defined 】错误信息: {{ execptionTest.unVal }}</view>
+<view>控制台输出 【 new Date error 】</view>
+<view>控制台输出 【 new RegExp error 】</view>

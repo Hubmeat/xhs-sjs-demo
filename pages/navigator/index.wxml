@@ -1,0 +1,8 @@
+<view class="section">
+  <view>{{ name }}</view><br />
+</view>
+<view class="nav-list" wx:for="{{pages}}" >
+  <navigator url="/{{item.path}}" class="navigator">
+    {{item.name}}
+  </navigator>
+</view>

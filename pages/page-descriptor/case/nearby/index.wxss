@@ -1,0 +1,4 @@
+/* pages/nearby/nearby.sjss */
+.swiper {
+  width: 100%;
+}

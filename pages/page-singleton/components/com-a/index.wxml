@@ -1,0 +1,8 @@
+<wxs src="../../wxs.sjs" module="comAScope" />
+
+<view>
+  <view>{{ name }}</view>
+  <view>comAScope from wxs: {{ comAScope.name }}</view>
+  <view>item from prop: {{ item.name }}</view>
+</view>
+

@@ -1,0 +1,16 @@
+<sjs src="./index.sjs" module="sjsRequire" />
+<sjs src="./namespace.sjs" module="sjsNameSpace" />
+
+<view class="section">
+  <view>{{ name }}</view><br />
+
+  <hr />
+
+  <view>sjs 输出 msg: {{ sjsRequire.msg }}</view>
+  <view>require 测试输出: {{ sjsRequire.bbb }}</view>
+  <view>require 测试方法: {{ sjsRequire.getName() }}</view>
+
+  <hr />
+  <view>与 data 优先级测试 <br /> [注释 src="./namespace.sjs" 查看效果]: {{ sjsNameSpace.foo }}</view>
+</view>
+

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "com-a": "./components/com-a/index",
+    "com-b": "./components/com-b/index"
+  }
+}

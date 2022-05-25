@@ -1,0 +1,30 @@
+
+
+<include src="./tpl.wxml" />
+<sjs src="./index.sjs"  module="prefix" />
+<sjs src="./index-event.sjs" module="computed" />
+
+<!-- <view class="section">
+  <view>sjs2: {{ name }}</view><br />
+  <view>varible from module B: {{ sjsRequire.bName }}</view>
+  <view bindtap="{{ sjsEvent.sjsClick }}">测试 sjsEvent sjsClick</view>
+</view> -->
+
+
+<button
+  aria-label="{{ ariaLabel }}" 
+  bindtap="{{ !disabled ? 'onClick' : 'noop' }}" 
+  bindgetuserinfo="bindGetUserInfo"
+  bindcontact="bindContact" 
+  bindgetphonenumber="{{ computed.aaa }}}" 
+  binderror="bindError" bindlaunchapp="bindLaunchApp"
+  bindopensetting="bindOpenSetting" bindgetAuthorize="{{ computed.name }}}"
+>xxx</button>
+<hr />
+<hr />
+<view>以下为 template 测试</view>
+<hr />
+
+<import src="./temp.wxml" />
+<template is="first" data="{{ dataFromSjs: sjsRequire, eventFromSjs: sjsEvent, disabled: false }}" />
+

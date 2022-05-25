@@ -1,0 +1,11 @@
+<sjs src="./index.sjs" module="sjsRequire" />
+
+<view>{{ name }}</view><br />
+
+<view class="section">
+  <view>varible from module B: {{ sjsRequire.bName }}</view>
+  <hr />
+  <view>function from module B: {{ sjsRequire.sayHi(' world') }}</view>
+  <hr />
+  <view>module reference test unit: {{ sjsRequire.getCNameAndModuleBName(sjsRequire.bName) }}</view>
+</view>

@@ -1,0 +1,21 @@
+<template name="first">
+  <view>template 中引用 sjs 中的 bName: {{ dataFromSjs.bName }}</view>
+  <view bindtap="{{ dataFromSjs.bindTapTest }}">事件测试：这个 view 组件绑定 bindtap</view>
+  <view catchtap="{{ dataFromSjs.catchTapTest }}">事件测试：这个 view 组件绑定 catchtap</view>
+  <view catchtap="onClick">事件测试：这个 view 组件绑定页面的 onClick</view>
+  <view bindtap="{{ !disabled ? 'onClick' : 'noop' }}">template 下测试测试 [sjsEvent.sjsClick] 点击不生效</view>
+
+  <hr />
+  <view bindtap="{{ sjsEvent.sjsClick }}">template 下测试测试 [sjsEvent.sjsClick] 点击不生效</view>
+  <view bindtap="{{ eventFromSjs.sjsClick }}">template 下测试测试 [eventFromSjs.sjsClick] 点击生效</view>
+  
+  <button
+    aria-label="{{ ariaLabel }}" 
+    bindtap="{{ !disabled ? 'onClick' : 'noop' }}" 
+    bindgetuserinfo="{{ eventFromSjs.aaa }}}"
+    bindcontact="bindContact" 
+    bindgetphonenumber="{{ sjsEvent.aaa }}}" 
+    binderror="bindError" bindlaunchapp="bindLaunchApp"
+    bindopensetting="bindOpenSetting" bindgetAuthorize="{{ sjsEvent.bbb }}}"
+  >xxx</button>
+</template>

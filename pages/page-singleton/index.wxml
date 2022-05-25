@@ -1,0 +1,9 @@
+<wxs from="./wxs.sjs" module="pageScope" />
+
+<view class="section">
+  <view>{{ name }}</view><br />
+
+  <com-a item={{pageScope.getData(name)}} />
+  <hr />
+  <com-b item={{pageScope.getData(name)}} />
+</view>

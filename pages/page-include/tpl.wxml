@@ -1,0 +1,2 @@
+<hr />
+<view>include template: {{ sjsRequire.bName }}</view>

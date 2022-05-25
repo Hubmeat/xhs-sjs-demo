@@ -1,0 +1,7 @@
+.section {
+}
+
+.item {
+  border-bottom: 2rpx solid #ccc;
+  margin: 30rpx 0;
+}

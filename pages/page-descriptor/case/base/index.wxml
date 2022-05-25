@@ -1,0 +1,14 @@
+<sjs src="./index.sjs" module="test" />
+<view bindtap="{{test.getName}}">SJS 事件文本</view>
+<!-- <view bindtap="test.getName">SJS 事件文本</view> -->
+<!-- <view bindtap="{{test.getName}}">SJS 事件文本</view>
+
+<view bindtap="{{test.getName()}}">SJS 事件文本2</view> -->
+<view bindtap="handleClick">普通测试文本</view>
+<view bindtap="handleClick(xxx)">普通测试文本2</view>
+
+<view  class="area" style='position:relative;width:100%;height:100%;'>
+  <view bindtap="{{test.sjsClick}}" data-index="1" data-obj="{{dataObj}}" bindtouchstart="{{test.touchstart}}" bindtouchmove="{{test.touchmove}}" bindtouchend='{{test.touchmove}}' class="movable" style="position:absolute;width:100px;height:100px;background:red;left:{{left}}px;top:{{top}}px">
+    点我变绿
+  </view>
+</view>
